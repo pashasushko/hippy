@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hippy.iml" filepath="$PROJECT_DIR$/.idea/modules/hippy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/hippy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/hippy.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/hippy.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/hippy.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/hippy.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/hippy.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.iml" filepath="$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/recorder/hippy.app.recorder.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/hippy.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/hippy.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
