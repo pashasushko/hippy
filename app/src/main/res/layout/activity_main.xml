@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+    <com.sushko.hippy.OpenglSurfaceView
+        android:id="@+id/drawingSurfaceView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/randomizeButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:alpha="0.9"
+        android:background="@drawable/ic_magic_wand"
+        android:onClick="randomizeOnClick"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:text="@string/magic_wand"
+        android:textColor="#00000000"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/shutterButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_shutter_button"
+        android:rotationX="20"
+        android:text="@string/shutter"
+        android:textColor="#00000000"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/colorPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <codes.side.andcolorpicker.hsl.HSLColorPickerSeekBar
+        android:id="@+id/colorPicker"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="-32dp"
+        android:alpha="0.8"
+        android:padding="16dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:soundEffectsEnabled="false"
+        app:hslColoringMode="pure"
+        app:hslMode="hue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/randomizeButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/speedSpinner"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.9"
+        android:contentDescription="@string/speed_spinner"
+        android:entries="@array/speed_options_array"
+        android:gravity="center_vertical|end"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/colorPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/shutterButton" />
+
+    <EditText
+        android:id="@+id/editTextMagicNumber"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="24dp"
+        android:alpha="0.9"
+        android:ems="10"
+        android:hint="@string/edit_text_magic_number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/colorPicker"
+        app:layout_constraintEnd_toStartOf="@+id/shutterButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

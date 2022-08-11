@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">hippy</string>
+    <string name="shutter">shutter</string>
+    <string name="magic_wand">randomize</string>
+    <string name="speed_spinner">speed dropdown menu</string>
+    <string name="opengl_unsupported">This device does not support OpenGL ES 3.0</string>
+    <string name="edit_text_magic_number">Магия</string>
+    <string-array name="speed_options_array">
+            <item>x2</item>
+            <item>x1.5</item>
+            <item>x1</item>
+            <item>x0.5</item>
+            <item>x0.25</item>
+    </string-array>
+</resources>
